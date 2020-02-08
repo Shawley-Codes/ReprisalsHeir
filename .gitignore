@@ -30,8 +30,8 @@
 *.blend1
 
 # Unreal temp files
-Intermediate/
-Saved/
+ReprisalsHeir/Intermediate/
+ReprisalsHeir/Saved/
 gameMain/Intermediate/
 gamemain/Saved/
 
