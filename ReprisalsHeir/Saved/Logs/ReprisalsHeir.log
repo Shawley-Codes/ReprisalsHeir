@@ -1,4 +1,4 @@
-﻿Log file open, 02/18/20 16:53:25
+﻿Log file open, 02/21/20 09:08:08
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: ReprisalsHeir
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 4.433889
+LogStats: Stats thread started at 4.057069
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -8:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -135,7 +135,7 @@ LogInit: Build: ++UE4+Release-4.22-CL-7053642
 LogInit: Engine Version: 4.22.3-7053642+++UE4+Release-4.22
 LogInit: Compatible Engine Version: 4.22.0-5660361+++UE4+Release-4.22
 LogInit: Net CL: 5660361
-LogInit: OS: Windows 10 (Release 1809) (), CPU: Intel(R) Xeon(R) CPU E5-1620 v4 @ 3.50GHz, GPU: NVIDIA Quadro K2200
+LogInit: OS: Windows 10 (Release 1809) (), CPU: Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz, GPU: NVIDIA Quadro P4000
 LogInit: Compiled (64-bit): Jun 18 2019 03:09:11
 LogInit: Compiled with Visual C++: 19.16.27025.01
 LogInit: Build Configuration: Development
@@ -171,789 +171,427 @@ LogInit: Presizing for max 16777216 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
-[2020.02.19-00.53.29:895][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2020.02.19-00.53.29:895][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2020.02.19-00.53.29:896][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
-[2020.02.19-00.53.29:896][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
-[2020.02.19-00.53.29:962][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.02.19-00.53.29:963][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.02.19-00.53.29:964][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.02.19-00.53.29:965][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.02.19-00.53.29:965][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.02.19-00.53.29:965][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.02.19-00.53.29:965][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.02.19-00.53.29:965][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.02.19-00.53.29:965][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.29:965][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.02.19-00.53.29:965][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.02.19-00.53.29:977][  0]LogInit: Selected Device Profile: [Windows]
-[2020.02.19-00.53.29:977][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2020.02.19-00.53.30:375][  0]LogHAL: Display: Platform has ~ 16 GB [17098489856 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2020.02.19-00.53.30:376][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
-[2020.02.19-00.53.30:376][  0]LogInit: Going up to parent DeviceProfile []
-[2020.02.19-00.53.30:385][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.02.19-00.53.30:385][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.02.19-00.53.30:386][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2020.02.19-00.53.30:387][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2020.02.19-00.53.30:387][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2020.02.19-00.53.30:387][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
-[2020.02.19-00.53.30:404][  0]LogInit: Computer: 144-01
-[2020.02.19-00.53.30:404][  0]LogInit: User: mmustafa
-[2020.02.19-00.53.30:404][  0]LogInit: CPU Page size=4096, Cores=4
-[2020.02.19-00.53.30:404][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2020.02.19-00.53.30:431][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2020.02.19-00.53.30:431][  0]LogMemory: Platform Memory Stats for Windows
-[2020.02.19-00.53.30:431][  0]LogMemory: Process Physical Memory: 97.23 MB used, 97.24 MB peak
-[2020.02.19-00.53.30:431][  0]LogMemory: Process Virtual Memory: 92.71 MB used, 92.71 MB peak
-[2020.02.19-00.53.30:431][  0]LogMemory: Physical Memory: 11712.90 MB used,  4593.49 MB free, 16306.39 MB total
-[2020.02.19-00.53.30:431][  0]LogMemory: Virtual Memory: 4660.41 MB used,  134213064.00 MB free, 134217728.00 MB total
-[2020.02.19-00.53.31:071][  0]LogInit: Using OS detected language (en-US).
-[2020.02.19-00.53.31:071][  0]LogInit: Using OS detected locale (en-US).
-[2020.02.19-00.53.31:543][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2020.02.19-00.53.32:945][  0]LogInit: Setting process to per monitor DPI aware
-[2020.02.19-00.53.34:479][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2020.02.19-00.53.34:479][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2020.02.19-00.53.35:814][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.02.19-00.53.35:815][  0]LogD3D11RHI: D3D11 adapters:
-[2020.02.19-00.53.36:044][  0]LogD3D11RHI:    0. 'NVIDIA Quadro K2200' (Feature Level 11_0)
-[2020.02.19-00.53.36:045][  0]LogD3D11RHI:       4053/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2020.02.19-00.53.36:049][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2020.02.19-00.53.36:049][  0]LogD3D11RHI:       0/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2020.02.19-00.53.36:049][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2020.02.19-00.53.36:073][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2020.02.19-00.53.36:073][  0]LogD3D11RHI:     GPU DeviceId: 0x13ba (for the marketing name, search the web for "GPU Device Id")
-[2020.02.19-00.53.36:073][  0]LogWindows: EnumDisplayDevices:
-[2020.02.19-00.53.36:073][  0]LogWindows:    0. 'NVIDIA Quadro K2200' (P:1 D:1)
-[2020.02.19-00.53.36:073][  0]LogWindows:    1. 'NVIDIA Quadro K2200' (P:0 D:0)
-[2020.02.19-00.53.36:074][  0]LogWindows:    2. 'NVIDIA Quadro K2200' (P:0 D:0)
-[2020.02.19-00.53.36:074][  0]LogWindows:    3. 'NVIDIA Quadro K2200' (P:0 D:0)
-[2020.02.19-00.53.36:074][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2020.02.19-00.53.36:075][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro K2200
-[2020.02.19-00.53.36:075][  0]LogD3D11RHI:   Driver Version: 431.02 (internal:26.21.14.3102, unified:431.02)
-[2020.02.19-00.53.36:075][  0]LogD3D11RHI:      Driver Date: 6-3-2019
-[2020.02.19-00.53.36:075][  0]LogRHI: Texture pool is 2837 MB (70% of 4053 MB)
-[2020.02.19-00.53.36:329][  0]LogD3D11RHI: Async texture creation enabled
-[2020.02.19-00.53.36:698][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2020.02.19-00.53.36:714][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2020.02.19-00.53.36:714][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2020.02.19-00.53.36:783][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2020.02.19-00.53.40:526][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
-[2020.02.19-00.53.40:556][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
-[2020.02.19-00.53.40:582][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
-[2020.02.19-00.53.40:609][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
-[2020.02.19-00.53.40:778][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
-[2020.02.19-00.53.40:869][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
-[2020.02.19-00.53.40:910][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
-[2020.02.19-00.53.40:944][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
-[2020.02.19-00.53.41:043][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
-[2020.02.19-00.53.41:213][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
-[2020.02.19-00.53.41:250][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
-[2020.02.19-00.53.41:388][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
-[2020.02.19-00.53.41:388][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
-[2020.02.19-00.53.41:435][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
-[2020.02.19-00.53.41:435][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
-[2020.02.19-00.53.41:466][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
-[2020.02.19-00.53.41:484][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
-[2020.02.19-00.53.41:544][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
-[2020.02.19-00.53.41:577][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
-[2020.02.19-00.53.41:658][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
-[2020.02.19-00.53.41:659][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
-[2020.02.19-00.53.41:659][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2020.02.19-00.53.41:831][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2020.02.19-00.53.42:696][  0]LogShaderCompilers: Guid format shader working directory is -29 characters bigger than the processId version (../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Intermediate/Shaders/WorkingDirectory/49804/).
-[2020.02.19-00.53.42:697][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/mmustafa/AppData/Local/Temp/UnrealShaderWorkingDir/81CBB49041B1DB943EEF3F84E71C14A2/'.
-[2020.02.19-00.53.42:732][  0]LogXGEController: Cleaning working directory: C:/Users/mmustafa/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2020.02.19-00.53.42:732][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2020.02.19-00.53.42:733][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2020.02.19-00.53.42:733][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2020.02.19-00.53.44:446][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2020.02.19-00.53.44:446][  0]LogDerivedDataCache: Display: Starting with empty Boot cache
-[2020.02.19-00.53.44:446][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2020.02.19-00.53.44:446][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2020.02.19-00.53.44:446][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.02.19-00.53.44:446][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2020.02.19-00.53.44:497][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2020.02.19-00.53.44:516][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Enterprise/DerivedDataCache/Compressed.ddp.
-[2020.02.19-00.53.44:530][  0]LogDerivedDataCache: Using Local data cache path C:/Users/mmustafa/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2020.02.19-00.53.44:530][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2020.02.19-00.53.44:530][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2020.02.19-00.53.44:896][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2020.02.19-00.53.44:966][  0]LogSlate: Using FreeType 2.6.0
-[2020.02.19-00.53.45:029][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2020.02.19-00.53.46:074][  0]LogAssetRegistry: FAssetRegistry took 0.0485 seconds to start up
-[2020.02.19-00.53.53:702][  0]LogInit: Selected Device Profile: [Windows]
-[2020.02.19-00.53.57:238][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2020.02.19-00.53.57:238][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2020.02.19-00.53.57:238][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2020.02.19-00.53.57:238][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2020.02.19-00.53.57:248][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2020.02.19-00.53.57:966][  0]LogNetVersion: ReprisalsHeir 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 1468292664)
-[2020.02.19-00.54.10:192][  0]LogPackageLocalizationCache: Processed 17 localized package path(s) for 1 prioritized culture(s) in 0.159598 seconds
-[2020.02.19-00.54.10:218][  0]LogUObjectArray: 42205 objects as part of root set at end of initial load.
-[2020.02.19-00.54.10:218][  0]LogUObjectAllocator: 7325032 out of 0 bytes used by permanent object pool.
-[2020.02.19-00.54.10:218][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2020.02.19-00.54.44:598][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2020.02.19-00.54.44:668][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2020.02.19-00.54.49:253][  0]SourceControl: Source control is disabled
-[2020.02.19-00.54.49:277][  0]SourceControl: Source control is disabled
-[2020.02.19-00.54.49:763][  0]SourceControl: Source control is disabled
-[2020.02.19-00.54.49:908][  0]SourceControl: Source control is disabled
-[2020.02.19-00.54.58:431][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2020.02.19-00.54.59:537][  0]LogHoudiniEngine: Starting the Houdini Engine module.
-[2020.02.19-00.54.59:542][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:/Program Files/Side Effects Software/Houdini 17.5.293/bin
-[2020.02.19-00.54.59:702][  0]LogLinker: Warning: Asset '../../Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2020.02.19-00.54.59:713][  0]LogStaticMesh: Building static mesh houdini_logo...
-[2020.02.19-00.54.59:955][  0]LogStaticMesh: Built static mesh [0.24s] /HoudiniEngine/houdini_logo.houdini_logo
-[2020.02.19-00.55.00:290][  0]LogLinker: Warning: Asset '../../Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2020.02.19-00.55.00:294][  0]LogMaterial: Display: Missing cached shader map for material houdini_default_material, compiling. 
-[2020.02.19-00.55.00:688][  0]LogLinker: Warning: Asset '../../Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2020.02.19-00.55.04:873][  0]LogHoudiniEngine: Error: Failed to create a Houdini Engine session
-[2020.02.19-00.55.04:873][  0]LogHoudiniEngine: Error: Failed to initialize HAPI: The session is invalid.
-[2020.02.19-00.55.05:234][  0]LogOcInput: OculusInput pre-init called
-[2020.02.19-00.55.20:111][  0]LogWindows: Failed to load 'libalias_api.dll' (GetLastError=126)
-[2020.02.19-00.55.20:111][  0]LogWindows: File 'libalias_api.dll' does not exist
-[2020.02.19-00.55.20:112][  0]LogWindows: Failed to load 'libalias_api.dll' (GetLastError=126)
-[2020.02.19-00.55.20:112][  0]LogWindows: File 'libalias_api.dll' does not exist
-[2020.02.19-00.55.22:732][  0]LogEngine: Initializing Engine...
-[2020.02.19-00.55.22:776][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.02.19-00.55.22:829][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.051 s
-[2020.02.19-00.55.26:099][  0]LogInit: Initializing FReadOnlyCVARCache
-[2020.02.19-00.55.27:248][  0]LogAIModule: Creating AISystem for world Untitled
-[2020.02.19-00.55.27:985][  0]LogInit: XAudio2 using 'Headphones (AUSDOM ANC8 Stereo)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2020.02.19-00.55.28:038][  0]LogInit: FAudioDevice initialized.
-[2020.02.19-00.55.28:039][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2020.02.19-00.55.29:053][  0]LogDerivedDataCache: Saved boot cache 1.01s 75MB C:/Users/mmustafa/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
-[2020.02.19-00.55.29:054][  0]LogInit: Texture streaming: Enabled
-[2020.02.19-00.55.31:771][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2020.02.19-00.55.33:378][  0]LogLauncherPlatform: Warning: FPlatformProcess::LaunchURL had an error: Failed launching URL
-[2020.02.19-00.55.33:956][  0]LogInit: Transaction tracking system initialized
-[2020.02.19-00.55.35:719][  0]BlueprintLog: New page: Editor Load
-[2020.02.19-00.55.40:669][  0]LocalizationService: Localization service is disabled
-[2020.02.19-00.55.46:698][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2020.02.19-00.55.46:716][  0]LogCook: Display: Mobile HDR setting 1
-[2020.02.19-00.55.47:767][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/' took 0.13s
-[2020.02.19-00.55.51:298][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
-[2020.02.19-00.55.51:414][  0]LogHoudiniEngineEditor: Houdini Engine Editor module startup complete.
-[2020.02.19-00.55.58:035][  0]SourceControl: Source control is disabled
-[2020.02.19-00.55.58:093][  0]Cmd: MAP LOAD FILE="../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/FinalLevels/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.02.19-00.55.58:098][  0]LightingResults: New page: Lighting Build
-[2020.02.19-00.55.58:467][  0]MapCheck: New page: Map Check
-[2020.02.19-00.55.58:467][  0]LightingResults: New page: Lighting Build
-[2020.02.19-00.55.59:107][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
-[2020.02.19-00.56.02:596][  0]LogAIModule: Creating AISystem for world MainMenu
-[2020.02.19-00.56.02:953][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2020.02.19-00.56.03:196][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
-[2020.02.19-00.56.03:196][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.02.19-00.56.03:222][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.161ms to complete.
-[2020.02.19-00.56.03:222][  0]LogFileHelpers: Loading map 'MainMenu' took 5.174
-[2020.02.19-00.56.06:240][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.02.19-00.56.06:249][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.02.19-00.56.06:256][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.02.19-00.56.06:266][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.02.19-00.56.06:758][  0]LogCollectionManager: Loaded 0 collections in 0.004713 seconds
-[2020.02.19-00.56.07:291][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Collections/' took 0.01s
-[2020.02.19-00.56.07:291][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Developers/mmustafa/Collections/' took 0.01s
-[2020.02.19-00.56.07:291][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Collections/' took 0.01s
-[2020.02.19-00.56.07:291][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2020.02.19-00.56.07:335][  0]LogContentBrowser: Native class hierarchy populated in 0.0150 seconds. Added 2901 classes and 733 folders.
-[2020.02.19-00.56.07:685][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2020.02.19-00.56.08:036][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:278][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:318][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:473][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:475][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:658][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:704][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:734][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:767][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:808][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:842][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:883][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.08:944][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:055][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:206][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:239][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:387][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:544][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:555][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:587][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:589][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:644][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:728][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:732][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:774][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:776][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.09:949][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.10:081][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2020.02.19-00.56.10:599][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2020.02.19-00.56.10:660][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 0 folders.
-[2020.02.19-00.56.11:172][  0]LogSlate: Took 0.016072 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2020.02.19-00.56.11:265][  0]LogSlate: Took 0.090957 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2020.02.19-00.56.11:427][  0]LogSlate: Took 0.025578 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2020.02.19-00.56.12:119][  0]LogRenderer: Reallocating scene render targets to support 1208x652 Format 10 NumSamples 1 (Frame:1).
-[2020.02.19-00.56.13:042][  0]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2020.02.19-00.56.13:181][  0]LogSlate: Window 'Tutorials' being destroyed
-[2020.02.19-00.56.13:372][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2020.02.19-00.56.13:372][  0]LogLoad: (Engine Initialization) Total time: 191.13 seconds
-[2020.02.19-00.56.13:372][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2020.02.19-00.56.13:807][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2020.02.19-00.56.13:995][  0]LogSlate: Took 0.033665 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.02.19-00.56.14:069][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/' took 0.54s
-[2020.02.19-00.56.14:206][  2]LogAssetRegistry: Asset discovery search completed in 148.1665 seconds
-[2020.02.19-00.56.14:258][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2020.02.19-00.56.14:258][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000065 seconds (updated 0 objects)
-[2020.02.19-00.56.16:531][206]LogSlate: Took 0.002362 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.02.19-00.56.31:270][922]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.02.19-00.56.54:178][192]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\mmustafa\Desktop\Sword.fbx)
-[2020.02.19-00.56.54:284][192]LogFbx: Loading FBX Scene from C:\Users\mmustafa\Desktop\Sword.fbx
-[2020.02.19-00.56.54:298][192]LogFbx: FBX Scene Loaded Succesfully
-[2020.02.19-00.57.13:877][192]LogSlate: Window 'FBX Import Options' being destroyed
-[2020.02.19-00.57.14:652][192]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.02.19-00.57.14:670][192]LogFbx: Display: Triangulating static mesh Krummsaebel:Mesh
-[2020.02.19-00.57.15:062][192]LogStaticMesh: Building static mesh Sword...
-[2020.02.19-00.57.15:123][192]LogStaticMesh: Built static mesh [0.06s] /Game/Weapon_Pack/Soard/Import/Sword.Sword
-[2020.02.19-00.57.15:161][192]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2020.02.19-00.57.17:524][405]LogSlate: Window 'Message Log' being destroyed
-[2020.02.19-00.57.17:545][405]LogSlate: Window 'Message Log' being destroyed
-[2020.02.19-00.57.29:767][910]LogAssetTools: Warning: Failed to import 'C:\Users\mmustafa\Desktop\.mayaSwatches\Sword.mb.swatches'. Unknown extension 'swatches'.
-[2020.02.19-00.57.34:782][984]LogAssetEditorManager: Opening Asset editor for Material /Game/Weapon_Pack/Soard/Import/lambert1.lambert1
-[2020.02.19-00.57.34:815][984]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.02.19-00.57.35:784][984]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.02.19-00.57.35:810][984]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-00.57.35:838][984]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
-[2020.02.19-00.57.35:905][984]LogSlate: Took 0.019106 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2020.02.19-00.57.36:364][985]LogSlate: Took 0.033836 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2020.02.19-00.57.37:590][ 65]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-00.57.40:053][236]MaterialEditorStats: Base pass shader: 109 instructions
-[2020.02.19-00.57.40:053][236]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 183 instructions
-[2020.02.19-00.57.40:053][236]MaterialEditorStats: Base pass vertex shader: 41 instructions
-[2020.02.19-00.57.40:053][236]MaterialEditorStats: Texture samplers: 3/16
-[2020.02.19-00.59.41:422][ 51]LogSlate: Window 'Message' being destroyed
-[2020.02.19-00.59.41:428][ 51]LogSlate: Window 'lambert1' being destroyed
-[2020.02.19-00.59.41:430][ 51]LogSlate: Window 'lambert1' being destroyed
-[2020.02.19-00.59.41:568][ 52]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
-[2020.02.19-00.59.50:230][365]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\mmustafa\Desktop\export\1001_Base_Color.png)
-[2020.02.19-00.59.50:367][365]LogTexture: Display: Building textures: 1001_Base_Color (AutoDXT, 2048X2048)
-[2020.02.19-00.59.50:815][365]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\mmustafa\Desktop\export\1001_Height.png)
-[2020.02.19-00.59.50:850][365]LogTexture: Display: Building textures: 1001_Height (AutoDXT, 2048X2048)
-[2020.02.19-00.59.51:233][365]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\mmustafa\Desktop\export\1001_Metallic.png)
-[2020.02.19-00.59.51:264][365]LogTexture: Display: Building textures: 1001_Metallic (AutoDXT, 2048X2048)
-[2020.02.19-00.59.51:660][365]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\mmustafa\Desktop\export\1001_Normal.png)
-[2020.02.19-00.59.51:873][365]LogTexture: Display: Building textures: 1001_Normal (BC5, 2048X2048)
-[2020.02.19-00.59.52:140][365]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\mmustafa\Desktop\export\1001_Normal_OpenGL.png)
-[2020.02.19-00.59.52:288][365]LogTexture: Display: Building textures: 1001_Normal_OpenGL (BC5, 2048X2048)
-[2020.02.19-00.59.52:597][365]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\mmustafa\Desktop\export\1001_Roughness.png)
-[2020.02.19-00.59.52:628][365]LogTexture: Display: Building textures: 1001_Roughness (AutoDXT, 2048X2048)
-[2020.02.19-00.59.53:095][365]LogFactory: FactoryCreateFile: DataTable with ReimportDataTableFactory (0 1 C:\Users\mmustafa\Desktop\export\Untitled.json)
-[2020.02.19-01.00.12:444][365]LogSlate: Window 'DataTable Options' being destroyed
-[2020.02.19-01.00.13:400][468]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (31.832 sec). This should never happen. Something is wrong with the timer delegate!
-[2020.02.19-01.00.17:035][881]LogAssetEditorManager: Opening Asset editor for Material /Game/Weapon_Pack/Soard/Import/lambert1.lambert1
-[2020.02.19-01.00.17:039][881]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.17:115][881]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.17:139][881]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.17:166][881]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.17:199][881]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
-[2020.02.19-01.00.19:121][994]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.00.21:261][129]MaterialEditorStats: Base pass shader: 109 instructions
-[2020.02.19-01.00.21:261][129]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 183 instructions
-[2020.02.19-01.00.21:261][129]MaterialEditorStats: Base pass vertex shader: 41 instructions
-[2020.02.19-01.00.21:261][129]MaterialEditorStats: Texture samplers: 3/16
-[2020.02.19-01.00.25:894][390]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.25:910][390]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.25:910][390]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2020.02.19-01.00.25:952][390]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
-[2020.02.19-01.00.25:961][390]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2020.02.19-01.00.26:336][409]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.27:899][502]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.00.32:422][837]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.32:443][837]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.32:446][837]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2020.02.19-01.00.33:907][911]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.00.36:517][  3]MaterialEditorStats: Base pass shader: 110 instructions
-[2020.02.19-01.00.36:517][  3]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 184 instructions
-[2020.02.19-01.00.36:517][  3]MaterialEditorStats: Base pass vertex shader: 45 instructions
-[2020.02.19-01.00.36:517][  3]MaterialEditorStats: Texture samplers: 4/16
-[2020.02.19-01.00.36:517][  3]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
-[2020.02.19-01.00.36:517][  3]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
-[2020.02.19-01.00.38:364][144]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.38:388][144]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
-[2020.02.19-01.00.38:400][144]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.38:428][144]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
-[2020.02.19-01.00.38:436][144]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2020.02.19-01.00.38:447][144]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
-[2020.02.19-01.00.38:994][173]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.40:898][287]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.00.41:813][345]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.41:842][345]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
-[2020.02.19-01.00.42:642][387]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.43:744][453]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.43:765][453]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
-[2020.02.19-01.00.43:803][453]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
-[2020.02.19-01.00.43:813][453]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2020.02.19-01.00.43:823][453]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
-[2020.02.19-01.00.43:833][453]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
-[2020.02.19-01.00.45:202][528]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.47:270][653]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.00.48:624][738]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.48:687][738]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
-[2020.02.19-01.00.49:173][762]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.00.50:190][823]LogShaderCompilers: Display: Shaders left to compile 30
-[2020.02.19-01.00.51:481][895]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.53:029][991]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.00.53:377][ 11]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.00.53:408][ 11]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
-[2020.02.19-01.00.53:434][ 11]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.00.53:450][ 11]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
-[2020.02.19-01.00.53:460][ 11]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2020.02.19-01.00.53:469][ 11]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
-[2020.02.19-01.00.53:478][ 11]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
-[2020.02.19-01.00.53:487][ 11]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
-[2020.02.19-01.00.54:691][ 79]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.00.55:903][149]LogShaderCompilers: Display: Shaders left to compile 30
-[2020.02.19-01.00.57:304][228]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.00.59:195][349]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.01.03:051][618]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.01.03:077][618]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
-[2020.02.19-01.01.03:095][618]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.01.04:340][681]LogShaderCompilers: Display: Shaders left to compile 30
-[2020.02.19-01.01.05:499][743]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.01.06:897][821]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.01.06:925][821]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
-[2020.02.19-01.01.06:962][821]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
-[2020.02.19-01.01.06:972][821]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2020.02.19-01.01.06:981][821]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
-[2020.02.19-01.01.06:990][821]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
-[2020.02.19-01.01.06:999][821]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
-[2020.02.19-01.01.07:009][821]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
-[2020.02.19-01.01.07:354][837]LogShaderCompilers: Display: Shaders left to compile 50
-[2020.02.19-01.01.08:483][900]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.01.09:406][950]LogShaderCompilers: Display: Shaders left to compile 30
-[2020.02.19-01.01.10:958][ 42]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.01.12:659][142]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.01.18:223][530]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.01.18:252][530]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.01.18:252][530]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
-[2020.02.19-01.01.19:533][592]LogShaderCompilers: Display: Shaders left to compile 30
-[2020.02.19-01.01.20:448][645]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.01.21:939][731]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.01.22:492][763]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.01.22:521][763]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
-[2020.02.19-01.01.22:562][763]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
-[2020.02.19-01.01.22:571][763]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2020.02.19-01.01.22:579][763]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
-[2020.02.19-01.01.22:588][763]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
-[2020.02.19-01.01.22:597][763]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
-[2020.02.19-01.01.22:606][763]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
-[2020.02.19-01.01.22:615][763]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
-[2020.02.19-01.01.23:162][788]LogShaderCompilers: Display: Shaders left to compile 50
-[2020.02.19-01.01.24:181][842]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.01.25:459][911]LogShaderCompilers: Display: Shaders left to compile 30
-[2020.02.19-01.01.27:257][ 10]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.01.28:973][106]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.01.29:008][106]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
-[2020.02.19-01.01.29:026][106]LogShaderCompilers: Display: Shaders left to compile 50
-[2020.02.19-01.01.31:100][212]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.01.32:321][279]LogShaderCompilers: Display: Shaders left to compile 30
-[2020.02.19-01.01.33:660][352]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.01.35:257][441]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.01.37:840][579]MaterialEditorStats: Base pass shader: 117 instructions
-[2020.02.19-01.01.37:840][579]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 195 instructions
-[2020.02.19-01.01.37:840][579]MaterialEditorStats: Base pass vertex shader: 57 instructions
-[2020.02.19-01.01.37:840][579]MaterialEditorStats: Texture samplers: 8/16
-[2020.02.19-01.01.37:840][579]MaterialEditorStats: Texture Lookups (Est.): VS(1), PS(5)
-[2020.02.19-01.01.37:840][579]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
-[2020.02.19-01.01.41:295][780]LogMaterialEditor: Saving and Compiling material lambert1
-[2020.02.19-01.01.41:845][780]LogMaterial: Display: Missing cached shader map for material PreviewMaterial_0, compiling. 
-[2020.02.19-01.01.41:936][780]LogShaderCompilers: Display: Shaders left to compile 40
-[2020.02.19-01.01.46:450][780]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.02.19-01.01.46:485][780]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.02.19-01.01.46:631][780]LogUObjectHash: Compacting FUObjectHashTables data took   2.65ms
-[2020.02.19-01.01.46:644][780]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2020.02.19-01.01.54:554][780]LogShaderCompilers: Display: Shaders left to compile 70
-[2020.02.19-01.01.54:554][780]LogShaderCompilers: Display: Shaders left to compile 60
-[2020.02.19-01.01.54:554][780]LogShaderCompilers: Display: Shaders left to compile 50
-[2020.02.19-01.01.54:559][780]TextureStreamingBuild: Display: Compiling optional shaders took 7.927 seconds.
-[2020.02.19-01.01.54:653][780]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
-[2020.02.19-01.01.59:648][780]LogSavePackage: Moving '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/lambert178CA9FC7400E1EED7383C7AE8242115C.tmp' to '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/lambert1.uasset'
-[2020.02.19-01.02.05:866][312]LogAssetEditorManager: Opening Asset editor for StaticMesh /Game/Weapon_Pack/Soard/Import/Sword.Sword
-[2020.02.19-01.02.06:560][312]LogMaterial: Display: Missing cached shader map for material OverlayPointMaterial, compiling. 
-[2020.02.19-01.02.06:583][312]LogMaterial: Display: Missing cached shader map for material WireMaterial, compiling. 
-[2020.02.19-01.02.06:601][312]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.02.06:601][312]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.02.06:601][312]LogShaderCompilers: Display: Shaders left to compile 20
-[2020.02.19-01.02.06:601][312]LogShaderCompilers: Display: Shaders left to compile 10
-[2020.02.19-01.02.06:601][312]LogMaterial: Display: Missing cached shader map for material OverlayLineMaterial, compiling. 
-[2020.02.19-01.02.06:614][312]LogMaterial: Display: Missing cached shader map for material HoveredGeometryMaterial, compiling. 
-[2020.02.19-01.02.06:628][312]LogMaterial: Display: Missing cached shader map for material HoveredFaceMaterial, compiling. 
-[2020.02.19-01.06.02:758][836]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.02.19-01.06.13:204][758]LogUObjectHash: Compacting FUObjectHashTables data took   2.61ms
-[2020.02.19-01.06.14:985][758]LogSlate: Window 'Delete Assets' being destroyed
-[2020.02.19-01.06.15:128][758]LogSlate: Window 'Sword' being destroyed
-[2020.02.19-01.06.15:360][758]LogUObjectGlobals: Force Deleting 1 Package(s):
-	Asset Name: /Game/Weapon_Pack/Soard/Import/Sword.Sword
-[2020.02.19-01.06.17:302][758]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
-[2020.02.19-01.06.20:217][ 63]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\mmustafa\Desktop\Sword.fbx)
-[2020.02.19-01.06.20:232][ 63]LogFbx: Loading FBX Scene from C:\Users\mmustafa\Desktop\Sword.fbx
-[2020.02.19-01.06.20:243][ 63]LogFbx: FBX Scene Loaded Succesfully
-[2020.02.19-01.06.22:001][ 63]LogSlate: Window 'FBX Import Options' being destroyed
-[2020.02.19-01.06.22:028][ 63]LogFbx: Display: Triangulating static mesh Krummsaebel:Mesh
-[2020.02.19-01.06.22:366][ 63]LogStaticMesh: Building static mesh Sword...
-[2020.02.19-01.06.22:427][ 63]LogStaticMesh: Built static mesh [0.06s] /Game/Weapon_Pack/Soard/Import/Sword.Sword
-[2020.02.19-01.06.22:436][ 63]LogStaticMesh: Warning: Sword has some nearly zero normals which can create some issues. (Tolerance of 1E-4)
-[2020.02.19-01.06.22:436][ 63]LogStaticMesh: Warning: Sword has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2020.02.19-01.06.22:453][ 63]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2020.02.19-01.06.22:453][ 63]FBXImport: Warning: Sword has some nearly zero normals which can create some issues. (Tolerance of 1E-4) 
-[2020.02.19-01.06.22:453][ 63]FBXImport: Warning: Sword has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2020.02.19-01.06.24:295][273]LogSlate: Window 'Message Log' being destroyed
-[2020.02.19-01.06.24:307][273]LogSlate: Window 'Message Log' being destroyed
-[2020.02.19-01.06.25:316][385]LogAssetEditorManager: Opening Asset editor for StaticMesh /Game/Weapon_Pack/Soard/Import/Sword.Sword
-[2020.02.19-01.06.39:063][556]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.02.19-01.06.39:183][569]LogSlate: Window 'Sword' being destroyed
-[2020.02.19-01.06.39:188][569]LogSlate: Window 'Sword' being destroyed
-[2020.02.19-01.06.57:968][652]LogAIModule: Creating AISystem for world testLevels_JK
-[2020.02.19-01.06.58:039][652]LogAssetEditorManager: Opening Asset editor for World /Game/ScottsLevel/testLevels_JK.testLevels_JK
-[2020.02.19-01.06.58:100][652]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
-[2020.02.19-01.07.02:992][652]LogSlate: Window 'Save Content' being destroyed
-[2020.02.19-01.07.03:322][652]LogSavePackage: Moving '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/1001_Base_ColorDA5C3CCE4EBF5DCB06E5348285E243C0.tmp' to '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/1001_Base_Color.uasset'
-[2020.02.19-01.07.03:526][652]LogSavePackage: Moving '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/1001_Height48EC38E642D1C04F48E8CFA1EC6F4137.tmp' to '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/1001_Height.uasset'
-[2020.02.19-01.07.03:606][652]LogSavePackage: Moving '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/1001_MetallicF03A892541F50F64FE80D0B05E72AE27.tmp' to '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/1001_Metallic.uasset'
-[2020.02.19-01.07.04:225][652]LogSavePackage: Moving '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/1001_Normal7F6C4D464F6612A396F8CD8E376FB940.tmp' to '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/1001_Normal.uasset'
-[2020.02.19-01.07.04:892][652]LogSavePackage: Moving '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/1001_Normal_OpenGL55A1D43A4FCC0F23173A6691972D04F0.tmp' to '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/1001_Normal_OpenGL.uasset'
-[2020.02.19-01.07.04:992][652]LogSavePackage: Moving '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/1001_RoughnessD6118F6E4B89593BF362D883B4755683.tmp' to '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/1001_Roughness.uasset'
-[2020.02.19-01.07.05:057][652]LogSavePackage: Moving '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Sword8DD11CE14556C61BE2BF68B5728B9B4E.tmp' to '../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/Sword.uasset'
-[2020.02.19-01.07.05:069][652]Cmd: MAP LOAD FILE="../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/ScottsLevel/testLevels_JK.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.02.19-01.07.05:069][652]LightingResults: New page: Lighting Build
-[2020.02.19-01.07.05:076][652]LoadErrors: New page: Loading map: testLevels_JK.umap
-[2020.02.19-01.07.05:088][652]MapCheck: New page: Map Check
-[2020.02.19-01.07.05:088][652]LightingResults: New page: Lighting Build
-[2020.02.19-01.07.05:162][652]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
-[2020.02.19-01.07.05:293][652]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2020.02.19-01.07.05:327][652]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
-[2020.02.19-01.07.05:349][652]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.02.19-01.07.05:349][652]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.173ms to complete.
-[2020.02.19-01.07.05:349][652]LogFileHelpers: Loading map 'testLevels_JK' took 0.290
-[2020.02.19-01.07.18:291][ 78]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2020.02.19-01.07.28:433][187]AssetReimport: New page: Outstanding source content changes 9:07:28 AM
-[2020.02.19-01.07.28:448][188]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/Weapon_Sword.fbx)
-[2020.02.19-01.07.28:459][188]LogFbx: Loading FBX Scene from C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/Weapon_Sword.fbx
-[2020.02.19-01.07.28:472][188]LogFbx: FBX Scene Loaded Succesfully
-[2020.02.19-01.07.30:983][188]LogSlate: Window 'FBX Import Options' being destroyed
-[2020.02.19-01.07.31:042][188]LogUObjectHash: Compacting FUObjectHashTables data took   1.22ms
-[2020.02.19-01.07.31:072][188]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
-[2020.02.19-01.07.34:084][523]AssetReimport: Importing new asset /Game/Weapon_Pack/Soard/Import/Weapon_Sword.
-[2020.02.19-01.07.34:084][523]AssetReimport: Failed to import file C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Weapon_Pack/Soard/Import/Weapon_Sword.fbx.
-[2020.02.19-01.07.48:012][ 64]LogAssetEditorManager: Opening Asset editor for World /Game/ScottsLevel/testLevels_JK.testLevels_JK
-[2020.02.19-01.07.48:041][ 64]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
-[2020.02.19-01.07.48:042][ 64]Cmd: MAP LOAD FILE="../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/ScottsLevel/testLevels_JK.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.02.19-01.07.48:042][ 64]LightingResults: New page: Lighting Build
-[2020.02.19-01.07.48:043][ 64]LoadErrors: New page: Loading map: testLevels_JK.umap
-[2020.02.19-01.07.48:064][ 64]MapCheck: New page: Map Check
-[2020.02.19-01.07.48:064][ 64]LightingResults: New page: Lighting Build
-[2020.02.19-01.07.48:106][ 64]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
-[2020.02.19-01.07.48:116][ 64]LogAIModule: Creating AISystem for world testLevels_JK
-[2020.02.19-01.07.48:121][ 64]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2020.02.19-01.07.48:153][ 64]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
-[2020.02.19-01.07.48:175][ 64]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.02.19-01.07.48:175][ 64]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.168ms to complete.
-[2020.02.19-01.07.48:176][ 64]LogFileHelpers: Loading map 'testLevels_JK' took 0.135
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Coffin_Normal (BC5, 2048X2048)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Coffin_Compact (AutoDXT, 2048X2048)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Slums_Wood_N (BC5, 2048X2048)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_StoneWall_A (AutoDXT, 2048X2048)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Slums_Wood_D (AutoDXT, 2048X2048)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Crypt_Wall_Decorative_B_Normal (BC5, 4096X4096)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Blank_A (AutoDXT, 8X8)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Cave_Mud_D (AutoDXT, 1024X1024)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Cave_Mud_N (BC5, 1024X1024)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Blank_C (AutoDXT, 8X8)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Coffin_Albedo (AutoDXT, 2048X2048)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Pillar_N (BC5, 4096X4096)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Pillar_C (AutoDXT, 4096X4096)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Pillar_A (AutoDXT, 4096X4096)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_CandleHolder_Iron_N (BC5, 4096X4096)
-[2020.02.19-01.08.06:940][280]LogTexture: Display: Building textures: T_Blank_N (BC5, 8X8)
-[2020.02.19-01.08.06:965][280]LogMaterial: Display: Missing cached shader map for material M_Tiling_Master, compiling. 
-[2020.02.19-01.08.07:546][280]LogShaderCompilers: Display: Shaders left to compile 170
-[2020.02.19-01.08.07:546][280]LogShaderCompilers: Display: Shaders left to compile 160
-[2020.02.19-01.08.07:546][280]LogShaderCompilers: Display: Shaders left to compile 150
-[2020.02.19-01.08.07:546][280]LogShaderCompilers: Display: Shaders left to compile 140
-[2020.02.19-01.08.07:546][280]LogTexture: Display: Building textures: T_Ceiling_Arch_Compact (AutoDXT, 4096X4096)
-[2020.02.19-01.08.07:546][280]LogTexture: Display: Building textures: T_StoneWall_C (AutoDXT, 2048X2048)
-[2020.02.19-01.08.23:219][280]LogTexture: Display: Building textures: T_Ceiling_Arch_Albedo (AutoDXT, 4096X4096)
-[2020.02.19-01.08.23:219][280]LogTexture: Display: Building textures: T_Cave_Rock_Stalactite_M (AutoDXT, 1024X1024)
-[2020.02.19-01.08.23:219][280]LogTexture: Display: Building textures: T_waternormal_N (BC5, 1024X1024)
-[2020.02.19-01.08.23:219][280]LogTexture: Display: Building textures: T_Cave_Rock_Detail_N (BC5, 1024X1024)
-[2020.02.19-01.08.23:219][280]LogTexture: Display: Building textures: T_BrickFloor_Clean_A (AutoDXT, 2048X2048)
-[2020.02.19-01.08.23:219][280]LogTexture: Display: Building textures: T_BrickFloor_Clean_C (AutoDXT, 2048X2048)
-[2020.02.19-01.08.23:219][280]LogTexture: Display: Building textures: T_Edge_Stones_And_Straight_Column_Texturing_Normal (BC5, 4096X4096)
-[2020.02.19-01.08.23:220][280]LogTexture: Display: Building textures: T_Edge_Stones_And_Straight_Column_Texturing_Compact (AutoDXT, 4096X4096)
-[2020.02.19-01.08.23:220][280]LogTexture: Display: Building textures: T_Edge_Stones_And_Straight_Column_Texturing_Albedo (AutoDXT, 4096X4096)
-[2020.02.19-01.08.23:220][280]LogTexture: Display: Building textures: T_Chandelier_C (AutoDXT, 4096X4096)
-[2020.02.19-01.08.23:945][280]LogTexture: Display: Building textures: T_StoneWall_N (BC5, 2048X2048)
-[2020.02.19-01.08.26:538][280]LogTexture: Display: Building textures: T_StoneWall_H (AutoDXT, 2048X2048)
-[2020.02.19-01.08.33:042][280]LogTexture: Display: Building textures: T_Chandelier_A (AutoDXT, 4096X4096)
-[2020.02.19-01.08.33:042][280]LogTexture: Display: Building textures: T_CandleStick_Iron_N (BC5, 4096X4096)
-[2020.02.19-01.08.33:042][280]LogTexture: Display: Building textures: T_CandleStick_Iron_C (AutoDXT, 4096X4096)
-[2020.02.19-01.08.33:048][280]LogMaterial: Display: Missing cached shader map for material M_Tiling_Master, compiling. 
-[2020.02.19-01.08.33:298][280]LogTexture: Display: Building textures: T_Mausoleum_Ceiling_N (BC5, 4096X4096)
-[2020.02.19-01.08.33:299][280]LogMaterial: Display: Missing cached shader map for material M_Master, compiling. 
-[2020.02.19-01.08.35:110][280]LogTexture: Display: Building textures: T_Crypt_Wall_Decorative_B_Albedo (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_Mausoleum_Ceiling_C (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_Mausoleum_Ceiling_A (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_CandleHolder_Iron_C (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_CandleHolder_Bronze_N (BC5, 4096X4096)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_CandleHolder_Iron_A (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_CandleHolder_Bronze_C (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_Cave_Rock_Large02_M (AutoDXT, 1024X1024)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_Cave_Rock_Large02_N (BC5, 2048X2048)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: EYE_NORMALS (BC5, 512X512)
-[2020.02.19-01.09.46:663][280]LogTexture: Display: Building textures: T_Cave_Dirt_D (AutoDXT, 1024X1024)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: ThumbnailTexture (DXT1, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_TilingClouds_01 (AutoDXT, 1024X1024)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Cave_Dirt_N (BC5, 1024X1024)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_TilingNoise03 (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_SmokeSubUV_8X8_02 (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_DropSubUV_A (AutoDXT, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_DropSubUV_N (BC5, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: ThumbnailTexture (DXT1, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_CubeNearEntrance (RGBA16F, 1024X1024)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Droplets_N (BC5, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Droplets_LitShaded_D (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_SmokeBall_01_8_8_D (AutoDXT, 1024X1024)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: ThumbnailTexture (DXT1, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: ThumbnailTexture (DXT1, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Water_shockwave_contrast_a_02 (AutoDXT, 256X256)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: ThumbnailTexture (DXT1, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: ThumbnailTexture (DXT1, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: ThumbnailTexture (DXT1, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_SmokeBall_03_Perlin (AutoDXT, 1024X1024)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_WaterFoam_02 (AutoDXT, 1024X1024)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Statue_Hooded_Metal_C (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Cave_Rock_01_N (BC5, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Moss_D (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Moss_N (BC5, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Cave_Grass_N (BC5, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Cave_Wood_Beam_N (BC5, 1024X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Gargoyle_Stand_A (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Gargoyle_N (BC5, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Gargoyle_C (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Torture_Chair_A (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Gibbet_Cage_Mount_Texturing_A (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Gargoyle_Stand_N (BC5, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Gargoyle_Stand_C (AutoDXT, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Stairs_10_Normal (BC5, 4096X4096)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Stairs_10_Compact (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Small_Window_N (BC5, 2048X2048)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_Stairs_10_Albedo (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_DropSubUV_M (AutoDXT, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_WaterDroplets_N (AutoDXT, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_WaterDroplets_M (AutoDXT, 512X512)
-[2020.02.19-01.09.46:664][280]LogTexture: Display: Building textures: T_AccessTunnel_Cube (RGBA16F, 2048X512)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Cave_Bricks_N (BC5, 1024X1024)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Cave_Bricks_M (AutoDXT, 1024X1024)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Wood_N (BC5, 4096X4096)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Wood_C (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Wood_A (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Table_C (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Table_N (BC5, 4096X4096)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Table_A (AutoDXT, 4096X4096)
-[2020.02.19-01.09.46:665][280]LogTexture: Display: Building textures: T_Stone_Coffin_N (BC5, 2048X2048)
-[2020.02.19-01.09.48:435][280]LogTexture: Display: Building textures: T_Stone_Coffin_C (AutoDXT, 2048X2048)
-[2020.02.19-01.09.48:435][280]LogTexture: Display: Building textures: T_Crypt_Wall_Decorative_B_Compact (AutoDXT, 4096X4096)
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
+[2020.02.21-17.08.12:183][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.02.21-17.08.12:183][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
+[2020.02.21-17.08.12:183][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
+[2020.02.21-17.08.12:198][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.02.21-17.08.12:198][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.02.21-17.08.12:214][  0]LogInit: Selected Device Profile: [Windows]
+[2020.02.21-17.08.12:214][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.02.21-17.08.12:294][  0]LogHAL: Display: Platform has ~ 16 GB [16839446528 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
+[2020.02.21-17.08.12:294][  0]LogInit: Going up to parent DeviceProfile []
+[2020.02.21-17.08.12:294][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Scalability.ini]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.02.21-17.08.12:294][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.02.21-17.08.12:310][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.02.21-17.08.12:310][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.02.21-17.08.12:310][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Config/Windows/Engine.ini]
+[2020.02.21-17.08.12:332][  0]LogInit: Computer: 143-04
+[2020.02.21-17.08.12:332][  0]LogInit: User: mmustafa
+[2020.02.21-17.08.12:332][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.02.21-17.08.12:332][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.02.21-17.08.12:349][  0]LogMemory: Memory total: Physical=15.7GB (16GB approx)
+[2020.02.21-17.08.12:349][  0]LogMemory: Platform Memory Stats for Windows
+[2020.02.21-17.08.12:349][  0]LogMemory: Process Physical Memory: 96.90 MB used, 96.91 MB peak
+[2020.02.21-17.08.12:349][  0]LogMemory: Process Virtual Memory: 88.73 MB used, 88.73 MB peak
+[2020.02.21-17.08.12:349][  0]LogMemory: Physical Memory: 4176.09 MB used,  11883.26 MB free, 16059.35 MB total
+[2020.02.21-17.08.12:349][  0]LogMemory: Virtual Memory: 4656.41 MB used,  134213072.00 MB free, 134217728.00 MB total
+[2020.02.21-17.08.13:583][  0]LogInit: Using OS detected language (en-US).
+[2020.02.21-17.08.13:583][  0]LogInit: Using OS detected locale (en-US).
+[2020.02.21-17.08.13:597][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.02.21-17.08.16:058][  0]LogInit: Setting process to per monitor DPI aware
+[2020.02.21-17.08.16:747][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.02.21-17.08.16:747][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.02.21-17.08.17:520][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.02.21-17.08.17:520][  0]LogD3D11RHI: D3D11 adapters:
+[2020.02.21-17.08.17:690][  0]LogD3D11RHI:    0. 'NVIDIA Quadro P4000' (Feature Level 11_0)
+[2020.02.21-17.08.17:690][  0]LogD3D11RHI:       8090/0/8029 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.02.21-17.08.17:693][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.02.21-17.08.17:693][  0]LogD3D11RHI:       0/0/8029 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.02.21-17.08.17:693][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.02.21-17.08.17:726][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.02.21-17.08.17:727][  0]LogD3D11RHI:     GPU DeviceId: 0x1bb1 (for the marketing name, search the web for "GPU Device Id")
+[2020.02.21-17.08.17:745][  0]LogWindows: EnumDisplayDevices:
+[2020.02.21-17.08.17:745][  0]LogWindows:    0. 'NVIDIA Quadro P4000' (P:1 D:1)
+[2020.02.21-17.08.17:746][  0]LogWindows:    1. 'NVIDIA Quadro P4000' (P:0 D:0)
+[2020.02.21-17.08.17:747][  0]LogWindows:    2. 'NVIDIA Quadro P4000' (P:0 D:0)
+[2020.02.21-17.08.17:747][  0]LogWindows:    3. 'NVIDIA Quadro P4000' (P:0 D:0)
+[2020.02.21-17.08.17:748][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.02.21-17.08.17:748][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro P4000
+[2020.02.21-17.08.17:748][  0]LogD3D11RHI:   Driver Version: 431.70 (internal:26.21.14.3170, unified:431.70)
+[2020.02.21-17.08.17:748][  0]LogD3D11RHI:      Driver Date: 7-24-2019
+[2020.02.21-17.08.17:748][  0]LogRHI: Texture pool is 5663 MB (70% of 8090 MB)
+[2020.02.21-17.08.17:840][  0]LogD3D11RHI: Async texture creation enabled
+[2020.02.21-17.08.17:922][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2020.02.21-17.08.17:944][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2020.02.21-17.08.17:944][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2020.02.21-17.08.17:996][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.02.21-17.08.19:333][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2020.02.21-17.08.19:361][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2020.02.21-17.08.19:523][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2020.02.21-17.08.19:661][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2020.02.21-17.08.19:811][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2020.02.21-17.08.19:840][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2020.02.21-17.08.19:883][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2020.02.21-17.08.19:920][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2020.02.21-17.08.19:950][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2020.02.21-17.08.20:107][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2020.02.21-17.08.20:122][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2020.02.21-17.08.20:334][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2020.02.21-17.08.20:334][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2020.02.21-17.08.20:410][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2020.02.21-17.08.20:410][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2020.02.21-17.08.20:505][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2020.02.21-17.08.20:552][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2020.02.21-17.08.20:575][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2020.02.21-17.08.20:612][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2020.02.21-17.08.20:707][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2020.02.21-17.08.20:707][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2020.02.21-17.08.20:707][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.02.21-17.08.20:858][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.02.21-17.08.21:668][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Intermediate/Shaders/WorkingDirectory/5448/).
+[2020.02.21-17.08.21:668][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/mmustafa/AppData/Local/Temp/UnrealShaderWorkingDir/6325AF6141B48E88D8ACAD9741E81B64/'.
+[2020.02.21-17.08.21:683][  0]LogXGEController: Cleaning working directory: C:/Users/mmustafa/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.02.21-17.08.21:683][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.02.21-17.08.21:683][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.02.21-17.08.21:683][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.02.21-17.08.23:929][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.02.21-17.08.24:786][  0]LogDerivedDataCache: Loaded boot cache 0.84s 72MB C:/Users/mmustafa/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2020.02.21-17.08.24:786][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/mmustafa/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
+[2020.02.21-17.08.24:786][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.02.21-17.08.24:786][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.02.21-17.08.24:786][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.02.21-17.08.24:786][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.02.21-17.08.24:896][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.02.21-17.08.24:919][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Enterprise/DerivedDataCache/Compressed.ddp.
+[2020.02.21-17.08.24:942][  0]LogDerivedDataCache: Using Local data cache path C:/Users/mmustafa/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.02.21-17.08.24:942][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.02.21-17.08.24:942][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.02.21-17.08.24:997][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.02.21-17.08.25:036][  0]LogSlate: Using FreeType 2.6.0
+[2020.02.21-17.08.25:066][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.02.21-17.08.26:175][  0]LogAssetRegistry: FAssetRegistry took 0.0387 seconds to start up
+[2020.02.21-17.08.30:163][  0]LogInit: Selected Device Profile: [Windows]
+[2020.02.21-17.08.32:100][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.02.21-17.08.32:101][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.02.21-17.08.32:101][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.02.21-17.08.32:101][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.02.21-17.08.32:101][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.02.21-17.08.32:284][  0]LogNetVersion: ReprisalsHeir 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 1468292664)
+[2020.02.21-17.08.38:246][  0]LogPackageLocalizationCache: Processed 17 localized package path(s) for 1 prioritized culture(s) in 0.198621 seconds
+[2020.02.21-17.08.38:255][  0]LogUObjectArray: 42205 objects as part of root set at end of initial load.
+[2020.02.21-17.08.38:255][  0]LogUObjectAllocator: 7325032 out of 0 bytes used by permanent object pool.
+[2020.02.21-17.08.38:255][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.02.21-17.08.57:381][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.02.21-17.08.57:480][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.02.21-17.08.58:977][  0]SourceControl: Source control is disabled
+[2020.02.21-17.08.58:977][  0]SourceControl: Source control is disabled
+[2020.02.21-17.08.59:345][  0]SourceControl: Source control is disabled
+[2020.02.21-17.08.59:408][  0]SourceControl: Source control is disabled
+[2020.02.21-17.09.03:551][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.02.21-17.09.04:085][  0]LogHoudiniEngine: Starting the Houdini Engine module.
+[2020.02.21-17.09.04:112][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:/Program Files/Side Effects Software/Houdini 17.5.293/bin
+[2020.02.21-17.09.04:114][  0]LogLinker: Warning: Asset '../../Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2020.02.21-17.09.04:375][  0]LogLinker: Warning: Asset '../../Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2020.02.21-17.09.04:390][  0]LogLinker: Warning: Asset '../../Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2020.02.21-17.09.07:749][  0]LogHoudiniEngine: Error: Failed to create a Houdini Engine session
+[2020.02.21-17.09.07:749][  0]LogHoudiniEngine: Error: Failed to initialize HAPI: The session is invalid.
+[2020.02.21-17.09.07:882][  0]LogOcInput: OculusInput pre-init called
+[2020.02.21-17.09.15:996][  0]LogWindows: Failed to load 'libalias_api.dll' (GetLastError=126)
+[2020.02.21-17.09.15:996][  0]LogWindows: File 'libalias_api.dll' does not exist
+[2020.02.21-17.09.15:997][  0]LogWindows: Failed to load 'libalias_api.dll' (GetLastError=126)
+[2020.02.21-17.09.15:997][  0]LogWindows: File 'libalias_api.dll' does not exist
+[2020.02.21-17.09.17:886][  0]LogEngine: Initializing Engine...
+[2020.02.21-17.09.18:151][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.02.21-17.09.18:165][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.011 s
+[2020.02.21-17.09.19:711][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.02.21-17.09.20:272][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.02.21-17.09.20:346][  0]LogInit: No audio devices found!
+[2020.02.21-17.09.20:382][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.02.21-17.09.20:513][  0]LogDerivedDataCache: Saved boot cache 0.13s 72MB C:/Users/mmustafa/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2020.02.21-17.09.20:514][  0]LogInit: Texture streaming: Enabled
+[2020.02.21-17.09.20:860][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.02.21-17.09.21:386][  0]LogLauncherPlatform: Warning: FPlatformProcess::LaunchURL had an error: Failed launching URL
+[2020.02.21-17.09.21:414][  0]LogInit: Transaction tracking system initialized
+[2020.02.21-17.09.22:644][  0]BlueprintLog: New page: Editor Load
+[2020.02.21-17.09.25:825][  0]LocalizationService: Localization service is disabled
+[2020.02.21-17.09.29:575][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/' took 0.09s
+[2020.02.21-17.09.29:575][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.02.21-17.09.29:575][  0]LogCook: Display: Mobile HDR setting 1
+[2020.02.21-17.09.34:497][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
+[2020.02.21-17.09.34:795][  0]LogHoudiniEngineEditor: Houdini Engine Editor module startup complete.
+[2020.02.21-17.09.42:345][  0]SourceControl: Source control is disabled
+[2020.02.21-17.09.42:363][  0]Cmd: MAP LOAD FILE="../../../../../../Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/FinalLevels/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.02.21-17.09.42:365][  0]LightingResults: New page: Lighting Build
+[2020.02.21-17.09.42:580][  0]MapCheck: New page: Map Check
+[2020.02.21-17.09.42:581][  0]LightingResults: New page: Lighting Build
+[2020.02.21-17.09.42:621][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2020.02.21-17.09.46:215][  0]LogAIModule: Creating AISystem for world MainMenu
+[2020.02.21-17.09.46:215][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.02.21-17.09.46:264][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2020.02.21-17.09.46:264][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.02.21-17.09.46:264][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.164ms to complete.
+[2020.02.21-17.09.46:264][  0]LogFileHelpers: Loading map 'MainMenu' took 3.910
+[2020.02.21-17.09.46:953][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.21-17.09.46:960][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.21-17.09.46:967][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.21-17.09.46:974][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.21-17.09.47:082][  0]LogCollectionManager: Loaded 0 collections in 0.006174 seconds
+[2020.02.21-17.09.47:401][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Saved/Collections/' took 0.01s
+[2020.02.21-17.09.47:401][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Developers/mmustafa/Collections/' took 0.00s
+[2020.02.21-17.09.47:401][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/Collections/' took 0.00s
+[2020.02.21-17.09.47:401][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2020.02.21-17.09.47:424][  0]LogContentBrowser: Native class hierarchy populated in 0.0224 seconds. Added 2901 classes and 733 folders.
+[2020.02.21-17.09.47:789][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.02.21-17.09.47:945][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:197][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:214][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:218][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:259][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:262][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:278][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:294][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:318][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:352][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:428][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:452][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:462][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:477][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:496][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:526][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:530][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:545][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:563][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:578][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:581][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:613][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:633][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:705][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:708][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:733][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:748][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.48:863][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2020.02.21-17.09.50:130][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2020.02.21-17.09.50:144][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 0 folders.
+[2020.02.21-17.09.50:370][  0]LogSlate: Took 0.031762 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.02.21-17.09.50:387][  0]LogSlate: Took 0.016334 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.02.21-17.09.50:438][  0]LogSlate: Took 0.011202 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.02.21-17.09.50:717][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2020.02.21-17.09.51:192][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2020.02.21-17.09.51:192][  0]LogLoad: (Engine Initialization) Total time: 144.30 seconds
+[2020.02.21-17.09.51:192][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.02.21-17.09.51:605][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.02.21-17.09.51:791][  0]LogSlate: Took 0.026189 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.02.21-17.09.51:911][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/mmustafa/Documents/GitHub/ReprisalsHeir/ReprisalsHeir/Content/' took 0.65s
+[2020.02.21-17.10.30:104][400]LogAssetRegistry: Asset discovery search completed in 124.0943 seconds
+[2020.02.21-17.10.30:106][400]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2020.02.21-17.10.30:106][400]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000050 seconds (updated 0 objects)
+[2020.02.21-17.10.30:465][401]LogSlate: Took 0.000303 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
